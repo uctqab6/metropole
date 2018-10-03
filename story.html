@@ -1,0 +1,206 @@
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Metropole</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
+  </head>
+
+  <style>
+
+  body {
+    position: relative;
+    overflow: scroll;
+    height:100%;
+  }
+
+  .after::after {
+      -webkit-animation: 10s steps(20) infinite grain;
+      animation: 10s steps(20) infinite grain;
+      background: url('images/grain.png') 0 0/6%;
+      content: "";
+      height: 300%;
+      width: 300%;
+      top: -100%;
+      left: -100%;
+      display: block;
+      position: absolute;
+      z-index: 5;
+      pointer-events: none;
+  }
+
+  @-webkit-keyframes grain {
+
+    0%, 100% {
+      -webkit-transform: translate(0,0);
+      transform:translate(0,0)
+    }
+
+    10% {
+      -webkit-transform:translate(-5%,-10%);
+      transform:translate(-5%,-10%)
+    }
+
+    20% {
+      -webkit-transform:translate(-15%,5%);
+      transform:translate(-15%,5%)
+    }
+
+    30% {
+      -webkit-transform:translate(7%,-25%);
+      transform:translate(7%,-25%)
+    }
+
+    40% {
+      -webkit-transform:translate(-5%,25%);
+      transform:translate(-5%,25%)
+    }
+
+    50% {
+      -webkit-transform:translate(-15%,10%);
+      transform:translate(-15%,10%)
+    }
+
+    60% {
+      -webkit-transform:translate(15%,0);
+      transform:translate(15%,0)
+    }
+
+    70% {
+      -webkit-transform:translate(0,15%);
+      transform:translate(0,15%)
+    }
+
+    80% {
+      -webkit-transform:translate(3%,35%);
+      transform:translate(3%,35%)
+    }
+
+    90% {
+      -webkit-transform:translate(-10%,10%);
+      transform:translate(-10%,10%)
+    }
+  }
+
+  @keyframes grain {
+
+    0%, 100% {
+      -webkit-transform: translate(0,0);
+      transform:translate(0,0)
+    }
+
+    10% {
+      -webkit-transform:translate(-5%,-10%);
+      transform:translate(-5%,-10%)
+    }
+
+    20% {
+      -webkit-transform:translate(-15%,5%);
+      transform:translate(-15%,5%)
+    }
+
+    30% {
+      -webkit-transform:translate(7%,-25%);
+      transform:translate(7%,-25%)
+    }
+
+    40% {
+      -webkit-transform:translate(-5%,25%);
+      transform:translate(-5%,25%)
+    }
+
+    50% {
+      -webkit-transform:translate(-15%,10%);
+      transform:translate(-15%,10%)
+    }
+
+    60% {
+      -webkit-transform:translate(15%,0);
+      transform:translate(15%,0)
+    }
+
+    70% {
+      -webkit-transform:translate(0,15%);
+      transform:translate(0,15%)
+    }
+
+    80% {
+      -webkit-transform:translate(3%,35%);
+      transform:translate(3%,35%)
+    }
+
+    90% {
+      -webkit-transform:translate(-10%,10%);
+      transform:translate(-10%,10%)
+    }
+  }
+
+  .nav {
+    text-align: right;
+    background-color: #381b1b;
+    padding: 15px;
+  }
+
+  a{
+    margin-right:40px;
+    margin-bottom:20px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  p{
+    font-family: 'Montserrat', sans-serif; line-height:25px;
+  }
+
+  .p2{
+    color: white;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  p.normal {
+    margin:70;
+  }
+
+  .column {
+    float: left;
+    width: 49%;
+    padding: 5px;
+  }
+
+  .row::after {
+        content: "";
+        clear: both;
+        display: table;
+  }
+
+  .img{
+    width:100%;
+  }
+
+  </style>
+
+  <body>
+
+<div class="after">
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="films.html">Archives</a>
+      <a href="photos.html">Gallery</a>
+    </div>
+
+    <p class="normal"> On Saturday, 17 April 1954, the Hon. Dr. T Caruana Demajo, Minister for Industry and Commerce cut a red and white ribbon stretched across the foyer of the theatre to mark the opening of “one of the Island’s most attractive and modern cinemas”, according to a reporter from The Times of Malta. During the interval of the inaugural screening at the Metropole, the audience had the unusual experience of watching the cinema roof slide back over their heads. </p>
+
+    <img class="picture" src="images/TOMpic.png" alt="TOMpic" style="display: block; width: 100%;">
+
+    <p class="normal">The owner, Paul Baldacchino built the theatre on the site of what was once a courtyard with an open-air stage. Constructors had been working on the erection of the theatre for a whole year, since June 1953. Paul built this dream with the help of J Damato, who was responsible for the construction of the theature, and architect J. Cumbo. </p>
+
+</div>
+
+</body>
+
+</html>

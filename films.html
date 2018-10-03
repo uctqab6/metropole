@@ -1,0 +1,277 @@
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Metropole</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
+  </head>
+
+    <style>
+
+    body {
+      position: relative;
+      overflow: scroll;
+      height:100%;
+    }
+
+    .after::after {
+        -webkit-animation: 10s steps(20) infinite grain;
+        animation: 10s steps(20) infinite grain;
+        background: url('images/grain.png') 0 0/6%;
+        content: "";
+        height: 300%;
+        width: 300%;
+        top: -100%;
+        left: -100%;
+        display: block;
+        position: absolute;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    @-webkit-keyframes grain {
+
+      0%, 100% {
+        -webkit-transform: translate(0,0);
+        transform:translate(0,0)
+      }
+
+      10% {
+        -webkit-transform:translate(-5%,-10%);
+        transform:translate(-5%,-10%)
+      }
+
+      20% {
+        -webkit-transform:translate(-15%,5%);
+        transform:translate(-15%,5%)
+      }
+
+      30% {
+        -webkit-transform:translate(7%,-25%);
+        transform:translate(7%,-25%)
+      }
+
+      40% {
+        -webkit-transform:translate(-5%,25%);
+        transform:translate(-5%,25%)
+      }
+
+      50% {
+        -webkit-transform:translate(-15%,10%);
+        transform:translate(-15%,10%)
+      }
+
+      60% {
+        -webkit-transform:translate(15%,0);
+        transform:translate(15%,0)
+      }
+
+      70% {
+        -webkit-transform:translate(0,15%);
+        transform:translate(0,15%)
+      }
+
+      80% {
+        -webkit-transform:translate(3%,35%);
+        transform:translate(3%,35%)
+      }
+
+      90% {
+        -webkit-transform:translate(-10%,10%);
+        transform:translate(-10%,10%)
+      }
+    }
+
+    @keyframes grain {
+
+      0%, 100% {
+        -webkit-transform: translate(0,0);
+        transform:translate(0,0)
+      }
+
+      10% {
+        -webkit-transform:translate(-5%,-10%);
+        transform:translate(-5%,-10%)
+      }
+
+      20% {
+        -webkit-transform:translate(-15%,5%);
+        transform:translate(-15%,5%)
+      }
+
+      30% {
+        -webkit-transform:translate(7%,-25%);
+        transform:translate(7%,-25%)
+      }
+
+      40% {
+        -webkit-transform:translate(-5%,25%);
+        transform:translate(-5%,25%)
+      }
+
+      50% {
+        -webkit-transform:translate(-15%,10%);
+        transform:translate(-15%,10%)
+      }
+
+      60% {
+        -webkit-transform:translate(15%,0);
+        transform:translate(15%,0)
+      }
+
+      70% {
+        -webkit-transform:translate(0,15%);
+        transform:translate(0,15%)
+      }
+
+      80% {
+        -webkit-transform:translate(3%,35%);
+        transform:translate(3%,35%)
+      }
+
+      90% {
+        -webkit-transform:translate(-10%,10%);
+        transform:translate(-10%,10%)
+      }
+    }
+
+    h2{
+      font-family: 'Playfair Display', serif; line-height:20px;
+    }
+
+    .rech2{
+      margin-left:40px;
+      color:white;
+      font-size: 20px;
+    }
+
+    .rec2 {
+      text-align: left;
+      padding:1px;
+      margin-top:20px;
+      background-color: #381b1b;
+    }
+
+    p{
+      font-family: 'Montserrat', sans-serif; line-height:25px;
+    }
+
+    .text{
+      margin-left:40px;
+      margin-top:40px;
+    }
+
+    .nav {
+      text-align: right;
+      background-color: #381b1b;
+      padding: 15px;
+    }
+
+    .rec{
+      margin-top:20px;
+      margin-left:20px;
+    }
+
+    a{
+      margin-right:40px;
+      margin-bottom:20px;
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+      color:white;
+    }
+
+    .column {
+      float: left;
+      width: 49%;
+      padding:5px;
+      align-self: center;
+      margin: 0 auto;
+    }
+
+    .column.500{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .row {
+      content: "";
+      clear: both;
+      display: table;
+      margin-left:40px;
+      margin-top:20px;
+    }
+
+    .records{
+      margin: auto;
+      padding: 40px;
+    }
+
+    </style>
+
+    <body>
+
+<div class="after">
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="photos.html">Gallery</a>
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+
+          <img src="images/slaves.jpg" alt="Slaves of Babylon" style="display: block; width: 90%;">
+
+        </div>
+
+        <div class="column">
+            <h2>Slaves of Babylon (1953)</h2>
+            <p>This was the first film ever shown on the panoramic screen at Metropole on its opening night in April 1954. Slaves of Babylon is a 1953 American Technicolor adventure film directed by William Castle and starring Richard Conte and Linda Christian. </p>
+
+            <p><em> In ancient times, a Jew is instrumental in the crowning of a new Median-Persian king who, in return, conquers Babylon and frees all the Jewish slaves.</em></p>
+
+            <img src="images/babylon.jpg" alt="Leopard" style="display: block; width: 85%;">
+
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="column">
+            <h2>Fireball 500 (1966)</h2>
+            <p><em>Stock car racer Dave Owens plays into the hands of whiskey runners <br> by agreeing to drive in a cross-country road race. He is assisted by Jane <br> Harris and Sonny Leander Fox. Soon Dave and Sonny begin a friendly <br> rivalry for Jane. Track action filmed at the Ascot and Saugus Raceways <br> near Los Angeles, local color shot in Charlotte, North Carolina.</em></p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mHJWw_u3-_8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+        <div class="column 500">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjExM2FmZTktZjgyMC00ZTVjLWIwMTctMjE4OThlNDU4MGQyL2ltYWdlXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SY1000_SX665_AL_.jpg" alt="Fireball 500" style="display: block; width: 60%;">
+        </div>
+
+      </div>
+
+      <div class="rec2">
+        <h2 class="rech2"> Records </h2>
+      </div>
+
+      <p class="text">Film showings were announced every few months in programmes which listed the titles and dates shown.</p>
+
+      <img class="records" src="images/Records4.png" alt="Records4" style="display: block; width: 85%;">
+
+      <img class="records" src="images/Records5.png" alt="Records5" style="display: block; width: 65%;">
+
+      <img class="records" src="images/Records2.png" alt="Records2" style="display: block; width: 65%;">
+
+      <img class="records" src="images/Records1.png" alt="Records1" style="display: block; width: 65%;">
+
+      <img class="records" src="images/Records3.png" alt="Records3" style="display: block; width: 65%;">
+
+</div>
+
+    </body>
+</html>

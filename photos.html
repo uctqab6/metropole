@@ -1,0 +1,330 @@
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Metropole</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
+  </head>
+
+    <style>
+
+    body {
+      position: relative;
+      overflow: scroll;
+      height:100%;
+    }
+
+    .after::after {
+        -webkit-animation: 10s steps(20) infinite grain;
+        animation: 10s steps(20) infinite grain;
+        background: url('images/grain.png') 0 0/6%;
+        content: "";
+        height: 300%;
+        width: 300%;
+        top: -100%;
+        left: -100%;
+        display: block;
+        position: absolute;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    @-webkit-keyframes grain {
+
+      0%, 100% {
+        -webkit-transform: translate(0,0);
+        transform:translate(0,0)
+      }
+
+      10% {
+        -webkit-transform:translate(-5%,-10%);
+        transform:translate(-5%,-10%)
+      }
+
+      20% {
+        -webkit-transform:translate(-15%,5%);
+        transform:translate(-15%,5%)
+      }
+
+      30% {
+        -webkit-transform:translate(7%,-25%);
+        transform:translate(7%,-25%)
+      }
+
+      40% {
+        -webkit-transform:translate(-5%,25%);
+        transform:translate(-5%,25%)
+      }
+
+      50% {
+        -webkit-transform:translate(-15%,10%);
+        transform:translate(-15%,10%)
+      }
+
+      60% {
+        -webkit-transform:translate(15%,0);
+        transform:translate(15%,0)
+      }
+
+      70% {
+        -webkit-transform:translate(0,15%);
+        transform:translate(0,15%)
+      }
+
+      80% {
+        -webkit-transform:translate(3%,35%);
+        transform:translate(3%,35%)
+      }
+
+      90% {
+        -webkit-transform:translate(-10%,10%);
+        transform:translate(-10%,10%)
+      }
+    }
+
+    @keyframes grain {
+
+      0%, 100% {
+        -webkit-transform: translate(0,0);
+        transform:translate(0,0)
+      }
+
+      10% {
+        -webkit-transform:translate(-5%,-10%);
+        transform:translate(-5%,-10%)
+      }
+
+      20% {
+        -webkit-transform:translate(-15%,5%);
+        transform:translate(-15%,5%)
+      }
+
+      30% {
+        -webkit-transform:translate(7%,-25%);
+        transform:translate(7%,-25%)
+      }
+
+      40% {
+        -webkit-transform:translate(-5%,25%);
+        transform:translate(-5%,25%)
+      }
+
+      50% {
+        -webkit-transform:translate(-15%,10%);
+        transform:translate(-15%,10%)
+      }
+
+      60% {
+        -webkit-transform:translate(15%,0);
+        transform:translate(15%,0)
+      }
+
+      70% {
+        -webkit-transform:translate(0,15%);
+        transform:translate(0,15%)
+      }
+
+      80% {
+        -webkit-transform:translate(3%,35%);
+        transform:translate(3%,35%)
+      }
+
+      90% {
+        -webkit-transform:translate(-10%,10%);
+        transform:translate(-10%,10%)
+      }
+    }
+
+    p{
+      font-family: 'Montserrat', sans-serif; line-height:25px;
+    }
+
+    .image{
+      width:67px;
+    }
+
+    .nav {
+      text-align: right;
+      background-color: #381b1b;
+      padding: 15px;
+    }
+
+    a{
+      margin-right:40px;
+      margin-bottom:20px;
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+      color: white;
+    }
+
+    .column {
+      float: left;
+      width: 49%;
+      padding: 5px;
+    }
+
+    .row {
+          content: "";
+          clear: both;
+          display: table;
+          width:100%;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color:black;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 18px;
+      font-family: 'Montserrat', sans-serif;
+      line-height:25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    </style>
+
+    <body>
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="films.html">Archives</a>
+      </div>
+
+
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Construction1.png" alt="con1" class="image" style="display: block; width: 100%;">
+            <div class="overlay">
+              <div class="text">The Metropole was built on the site of a courtyard with an open-air stage.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Construction3.png" alt="con3" style="display: block; width: 100%;" />
+            <div class="overlay">
+              <div class="text">Constructors had been working on the erection of the theatre for a whole year, since June 1953.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Construction2.png" alt="con2" class="image" style="display: block; width: 100%;">
+            <div class="overlay">
+              <div class="text">Paul Baldacchino standing on the balcony, overseeing the construction of the theatre.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Construction4.png" alt="con4" style="display: block; width: 100%;" />
+            <div class="overlay">
+              <div class="text">The metal frame of the sliding roof.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Bkara.jpg" alt="bkara" class="image" style="display: block; width: 100%;">
+            <div class="overlay">
+              <div class="text">The Metropole was located in the large white building in Birkirkara.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/large.jpg" alt="Theatre" style="display: block; width: 100%;" />
+            <div class="overlay">
+              <div class="text">The theatre's panoramic screen.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/Ball.png" alt="ball" class="image" style="display: block; width: 100%;">
+            <div class="overlay">
+              <div class="text">The theatre was also used as a venue for events such as the Carnival Ball.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/ticket.png" alt="ticket" style="display: block; width: 100%;" />
+            <div class="overlay">
+              <div class="text">A ticket for the bar during intermissin.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/TOMtext.png" alt="TOM" class="image" style="display: block; width: 100%;">
+            <div class="overlay">
+              <div class="text">An excerpt from The Times of Malta on Monday 19 April 1954.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container">
+            <img class="picture" src="images/ledger.png" alt="ledger" style="display: block; width: 100%;" />
+            <div class="overlay">
+              <div class="text">The final accounts entry on the ledger before closing in January 1979.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </body>
+</html>
