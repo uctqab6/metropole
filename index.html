@@ -1,11 +1,15 @@
 <html>
+
   <head>
-        <meta charset="utf-8">
-        <title>Metropole</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
+    <meta charset="utf-8">
+    <title>Metropole</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/noise.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
 
         body{
           padding:0;
@@ -178,189 +182,71 @@
       height: 100%;
     }
 
-    .after::after {
-        -webkit-animation: 10s steps(20) infinite grain;
-        animation: 10s steps(20) infinite grain;
-        background: url('images/grain.png') 0 0/6%;
-        content: "";
-        height: 300%;
-        width: 300%;
-        top: -100%;
-        left: -100%;
-        display: block;
-        position: absolute;
-        z-index: 5;
-        pointer-events: none;
-    }
-
-    @-webkit-keyframes grain {
-
-      0%, 100% {
-        -webkit-transform: translate(0,0);
-        transform:translate(0,0)
-      }
-
-      10% {
-        -webkit-transform:translate(-5%,-10%);
-        transform:translate(-5%,-10%)
-      }
-
-      20% {
-        -webkit-transform:translate(-15%,5%);
-        transform:translate(-15%,5%)
-      }
-
-      30% {
-        -webkit-transform:translate(7%,-25%);
-        transform:translate(7%,-25%)
-      }
-
-      40% {
-        -webkit-transform:translate(-5%,25%);
-        transform:translate(-5%,25%)
-      }
-
-      50% {
-        -webkit-transform:translate(-15%,10%);
-        transform:translate(-15%,10%)
-      }
-
-      60% {
-        -webkit-transform:translate(15%,0);
-        transform:translate(15%,0)
-      }
-
-      70% {
-        -webkit-transform:translate(0,15%);
-        transform:translate(0,15%)
-      }
-
-      80% {
-        -webkit-transform:translate(3%,35%);
-        transform:translate(3%,35%)
-      }
-
-      90% {
-        -webkit-transform:translate(-10%,10%);
-        transform:translate(-10%,10%)
-      }
-    }
-
-    @keyframes grain {
-
-      0%, 100% {
-        -webkit-transform: translate(0,0);
-        transform:translate(0,0)
-      }
-
-      10% {
-        -webkit-transform:translate(-5%,-10%);
-        transform:translate(-5%,-10%)
-      }
-
-      20% {
-        -webkit-transform:translate(-15%,5%);
-        transform:translate(-15%,5%)
-      }
-
-      30% {
-        -webkit-transform:translate(7%,-25%);
-        transform:translate(7%,-25%)
-      }
-
-      40% {
-        -webkit-transform:translate(-5%,25%);
-        transform:translate(-5%,25%)
-      }
-
-      50% {
-        -webkit-transform:translate(-15%,10%);
-        transform:translate(-15%,10%)
-      }
-
-      60% {
-        -webkit-transform:translate(15%,0);
-        transform:translate(15%,0)
-      }
-
-      70% {
-        -webkit-transform:translate(0,15%);
-        transform:translate(0,15%)
-      }
-
-      80% {
-        -webkit-transform:translate(3%,35%);
-        transform:translate(3%,35%)
-      }
-
-      90% {
-        -webkit-transform:translate(-10%,10%);
-        transform:translate(-10%,10%)
-      }
-    }
-
-        </style>
+    </style>
   </head>
 
-    <body>
+  <body>
 
-  <div class="after">
+    <canvas id="noise" class="noise"></canvas>
 
-    <div class="landing">
-      <img class="metropole-logo" src="images/metropole.png" width="60%" />
-    </div>
+    <div class="after">
 
-    <div class="downArrow bounce">
-      <img src="images/arrow.png" width="40" height="40" />
-    </div>
+      <div class="landing">
+        <img class="metropole-logo" src="images/metropole.png" width="60%" />
+      </div>
 
-    <img src="images/main.png" width="100%"/>
+      <div class="downArrow bounce">
+        <img src="images/arrow.png" width="40" height="40" />
+      </div>
 
-    <div class="content">
+      <img src="images/main.png" width="100%"/>
 
-          <h2 class="p2"> A tribute to a small piece of Malta's early cinematic culture.</h2>
+      <div class="content">
+
+            <h2 class="p2"> A tribute to a small piece of Malta's early cinematic culture.</h2>
+
+          <div class="row">
+
+            <div class="column">
+            <img src="images/roughblemished.png" alt="posters" style="width:100%">
+            </div>
+
+            <div class="column">
+              <img src="images/Theatre.jpg" alt="balcony" style="width:100%">
+            </div>
+
+          </div>
+
+          <p class="normal">Located on Bishop Labini Street, the Metropole theatre, or 'talkies' as it was commonly referred to, was the latest and largest cinema in Birkirkara, Malta. It was established in 1954 and stood as the only cinema with a panoramic screen and sliding roof. The theatre seated around 800 people and was split in two levels with a single balcony. The Metropole closed down in 1979 and has since then been gutted from the inside, now serving as an electrical and plumbing warehouse. </p>
 
         <div class="row">
 
           <div class="column">
-          <img src="images/roughblemished.png" alt="posters" style="width:100%">
+            <p class="top"> The Metropole theatre was one of its kind in Malta for its retractable roof and ceiling. The sliding roof was 80 feet long by 48 feet wide and ran on iron rails driven by a mechanical winch which was slid open during warm summer evenings or to clear the thick smokey air inside the theatre during performances. </p>
+
+            <p class="top"> The Metropole had two Gaumont-Kalee projectors with dual sound system, which could project 3-D and Cinemascope films. The interior of the theatre was decorated in moro-plastic and with fluorescent light designs and its walls were specially constructed for sound.</p>
           </div>
 
-          <div class="column">
-            <img src="images/Theatre.jpg" alt="balcony" style="width:100%">
+          <div class="column posters">
+            <img src="images/Posters.jpg" alt="posters" style="width:100%">
           </div>
 
+          <p class="p3">This page is dedicated to my grand-father, Paul Baldacchino, who ran the business devoutly.</p>
+
         </div>
 
-        <p class="normal">Located on Bishop Labini Street, the Metropole theatre, or 'talkies' as it was commonly referred to, was the latest and largest cinema in Birkirkara, Malta. It was established in 1954 and stood as the only cinema with a panoramic screen and sliding roof. The theatre seated around 800 people and was split in two levels with a single balcony. The Metropole closed down in 1979 and has since then been gutted from the inside, now serving as an electrical and plumbing warehouse. </p>
-
-      <div class="row">
-
-        <div class="column">
-          <p class="top"> The Metropole theatre was one of its kind in Malta for its retractable roof and ceiling. The sliding roof was 80 feet long by 48 feet wide and ran on iron rails driven by a mechanical winch which was slid open during warm summer evenings or to clear the thick smokey air inside the theatre during performances. </p>
-
-          <p class="top"> The Metropole had two Gaumont-Kalee projectors with dual sound system, which could project 3-D and Cinemascope films. The interior of the theatre was decorated in moro-plastic and with fluorescent light designs and its walls were specially constructed for sound.</p>
+        <div class="nav">
+          <a class="nav-link" href="story.html"><strong>Story</strong></a>
+          <a class="nav-link" href="films.html"><strong>Archives</strong></a>
+          <a class="nav-link" href="photos.html"><strong>Gallery</strong></a>
         </div>
-
-        <div class="column posters">
-          <img src="images/Posters.jpg" alt="posters" style="width:100%">
-        </div>
-
-        <p class="p3">This page is dedicated to my grand-father, Paul Baldacchino, who ran the business devoutly.</p>
-
-      </div>
-
-      <div class="nav">
-        <a class="nav-link" href="story.html"><strong>Story</strong></a>
-        <a class="nav-link" href="films.html"><strong>Archives</strong></a>
-        <a class="nav-link" href="photos.html"><strong>Gallery</strong></a>
-      </div>
 
         <h2>Leave a comment...</h2>
 
+      </div>
+
     </div>
+    <script src="src/noise.js"></script>
 
-  </div>
-
-    </body>
+  </body>
 </html>

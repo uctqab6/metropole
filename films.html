@@ -4,6 +4,7 @@
         <title>Metropole</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/noise.css" />
   </head>
 
     <style>
@@ -12,127 +13,6 @@
       position: relative;
       overflow: scroll;
       height:100%;
-    }
-
-    .after::after {
-        -webkit-animation: 10s steps(20) infinite grain;
-        animation: 10s steps(20) infinite grain;
-        background: url('images/grain.png') 0 0/6%;
-        content: "";
-        height: 300%;
-        width: 300%;
-        top: -100%;
-        left: -100%;
-        display: block;
-        position: absolute;
-        z-index: 5;
-        pointer-events: none;
-    }
-
-    @-webkit-keyframes grain {
-
-      0%, 100% {
-        -webkit-transform: translate(0,0);
-        transform:translate(0,0)
-      }
-
-      10% {
-        -webkit-transform:translate(-5%,-10%);
-        transform:translate(-5%,-10%)
-      }
-
-      20% {
-        -webkit-transform:translate(-15%,5%);
-        transform:translate(-15%,5%)
-      }
-
-      30% {
-        -webkit-transform:translate(7%,-25%);
-        transform:translate(7%,-25%)
-      }
-
-      40% {
-        -webkit-transform:translate(-5%,25%);
-        transform:translate(-5%,25%)
-      }
-
-      50% {
-        -webkit-transform:translate(-15%,10%);
-        transform:translate(-15%,10%)
-      }
-
-      60% {
-        -webkit-transform:translate(15%,0);
-        transform:translate(15%,0)
-      }
-
-      70% {
-        -webkit-transform:translate(0,15%);
-        transform:translate(0,15%)
-      }
-
-      80% {
-        -webkit-transform:translate(3%,35%);
-        transform:translate(3%,35%)
-      }
-
-      90% {
-        -webkit-transform:translate(-10%,10%);
-        transform:translate(-10%,10%)
-      }
-    }
-
-    @keyframes grain {
-
-      0%, 100% {
-        -webkit-transform: translate(0,0);
-        transform:translate(0,0)
-      }
-
-      10% {
-        -webkit-transform:translate(-5%,-10%);
-        transform:translate(-5%,-10%)
-      }
-
-      20% {
-        -webkit-transform:translate(-15%,5%);
-        transform:translate(-15%,5%)
-      }
-
-      30% {
-        -webkit-transform:translate(7%,-25%);
-        transform:translate(7%,-25%)
-      }
-
-      40% {
-        -webkit-transform:translate(-5%,25%);
-        transform:translate(-5%,25%)
-      }
-
-      50% {
-        -webkit-transform:translate(-15%,10%);
-        transform:translate(-15%,10%)
-      }
-
-      60% {
-        -webkit-transform:translate(15%,0);
-        transform:translate(15%,0)
-      }
-
-      70% {
-        -webkit-transform:translate(0,15%);
-        transform:translate(0,15%)
-      }
-
-      80% {
-        -webkit-transform:translate(3%,35%);
-        transform:translate(3%,35%)
-      }
-
-      90% {
-        -webkit-transform:translate(-10%,10%);
-        transform:translate(-10%,10%)
-      }
     }
 
     h2{
@@ -210,6 +90,7 @@
     </style>
 
     <body>
+        <canvas id="noise" class="noise"></canvas>
 
 <div class="after">
 
@@ -272,6 +153,6 @@
       <img class="records" src="images/Records3.png" alt="Records3" style="display: block; width: 65%;">
 
 </div>
-
+    <script src="src/noise.js"></script>
     </body>
 </html>
