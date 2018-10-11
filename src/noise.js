@@ -86,4 +86,4 @@ const noise = () => {
     })();
 };
 
-// noise();
+noise();
