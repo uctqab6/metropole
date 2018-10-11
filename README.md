@@ -1,6 +1,6 @@
 ## Metropole
 
-by Alessandra Faldacchino
+by Alessandra Faldacchino, the bitchcoder
 
 #### Next steps
 
