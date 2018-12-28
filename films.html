@@ -96,6 +96,41 @@
       padding: 40px;
     }
 
+    .container {
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color:black;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .textimage {
+      color: white;
+      font-size: 18px;
+      font-family: 'Montserrat', sans-serif;
+      line-height:25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
     </style>
 
     <body>
@@ -109,6 +144,15 @@
           <a href="index.html">Home</a>
           <a href="story.html">Story</a>
           <a href="photos.html">Gallery</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="picture" src="images/ticket.png" alt="ticket" style="display: block; width: 100%;" />
+          <div class="overlay">
+            <div class="textimage">A ticket for the bar during intermission.</div>
+          </div>
         </div>
       </div>
 
