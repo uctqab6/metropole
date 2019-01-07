@@ -74,25 +74,36 @@
         }
 
         a{
-          margin-right:40px;
-          margin-bottom:20px;
           font-family: 'Playfair Display', serif;
         }
 
         .nav {
-          text-align: center;
-          padding-top:30px;
-          padding-bottom: 30px;
           background-color: rgb(143, 119, 126);
+          display: flex;
+          justify-content: center;
         }
 
         .nav-link {
-          color:white;
+          color: black;
+          font-weight: bold;
           text-decoration: none;
+          border-right: 1px solid black;
           padding-left: 60px;
+          height: 50px;
           padding-right: 60px;
-          border-style: outset;
-          border-width: 2px;
+          display: flex;
+          align-items: center;
+        }
+
+        .nav-link:hover {
+          background-color: black;
+          color: white;
+          transform: scale(1.2);
+          transition: all 0.3s ease-out;
+        }
+
+        .nav-link:first-child {
+          border-left: 1px solid black;
         }
 
         .landing {
